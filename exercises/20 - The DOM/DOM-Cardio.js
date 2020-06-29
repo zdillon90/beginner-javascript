@@ -1,3 +1,4 @@
+console.log("it works")
 // Make a div
 
 // add a class of wrapper to it
