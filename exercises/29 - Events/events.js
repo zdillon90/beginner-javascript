@@ -13,13 +13,11 @@ coolButton.addEventListener('click', hooray);
 
 butts.removeEventListener('click', handleClick);
 
-// Listen on Multiple items
-function buyItem() {
-  console.log('BUYING ITEM');
+function handleBuyButtonClick(event) {
+  console.log('You are buying it!');
+  console.log(event.target);
 }
 
-function attachBuyButtonClick(button) {
-  button.addEventListener('click', buyItem);
-}
-
-buyButtons.forEach(attachBuyButtonClick);
+buyButtons.forEach(function(buyButton) {
+  buyButton.addEventListener('click', handleBuyButtonClick);
+});
